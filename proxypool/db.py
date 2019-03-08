@@ -101,5 +101,6 @@ class RedisClient(object):
 
 if __name__ == '__main__':
     conn = RedisClient()
+    conn.add('127.0.0.1:8888')
     result = conn.batch(680, 688)
     print(result)
